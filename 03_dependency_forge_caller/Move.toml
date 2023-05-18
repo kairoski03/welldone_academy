@@ -1,0 +1,12 @@
+[package]
+name = "forge_call"
+version = "0.0.1"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir="crates/sui-framework/packages/sui-framework/", rev = "testnet" }
+forge = { git = "https://github.com/kairoski03/welldone_academy.git", subdir= "03_dependency_forge/", rev= "main"}
+
+[addresses]
+forge_caller = "0x0"
+forge = "0xfab611a23cd04ae2598200bc9297faf54aefe689f17447ffd356057162aabe7f"
+sui = "0000000000000000000000000000000000000000000000000000000000000002"
