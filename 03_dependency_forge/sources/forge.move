@@ -12,7 +12,7 @@ module forge::forge {
     public entry fun sword_create(magic: u64, strength: u64, recipient: address, ctx: &mut TxContext) {
         let sword = Sword {
             id: object::new(ctx),
-            magic,
+            magic: magic+1,
             strength,
         };
         transfer::transfer(sword, recipient);
